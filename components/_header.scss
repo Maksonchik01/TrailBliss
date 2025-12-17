@@ -8,6 +8,10 @@
     border-radius: 60px;
 padding: 24px 40px;
 background: var(--cream-lite);
+@media (max-width: 930px) {
+    flex-direction: column;
+    gap: 30px;
+}
 }
 .header-nav-list{
     display: flex;
@@ -39,6 +43,10 @@ text-decoration: none;
     display: flex;
     gap: 32px;
     align-items: center;
+    @media (max-width: 400px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 .header-nav-second-list-item-link{
     font-family: var(--font-family);
@@ -48,6 +56,7 @@ color: var(--black);
 text-decoration: none;
 }
 .header-nav-second-list-item-btn{
+    display: block;
     font-family: var(--font-family);
 font-weight: 500;
 font-size: 18px;
@@ -58,6 +67,9 @@ padding: 8px 14px;
 width: 128px;
 height: 41px;
 background-color: transparent;
+   @media (max-width: 400px){
+     
+    }
 }
 .header-box{
     display: flex;
@@ -65,6 +77,9 @@ background-color: transparent;
 gap: 24px;
 align-items: center;
 margin-bottom: 40px;
+@media (max-width: 800px) {
+    flex-direction: column;
+}
 }
 .header-box-left-title{
     font-family: var(--font-family);
@@ -73,6 +88,12 @@ font-size: 72px;
 line-height: 110%;
 color: var(--black);
 max-width: 819px;
+@media (max-width: 800px) {
+    text-align: center;
+}
+@media (max-width: 400px) {
+    font-size: 58px;
+}
 }
 .header-box-right-text{
     font-family: var(--font-family);
@@ -81,8 +102,12 @@ font-size: 24px;
 color: var(--gray-dark);
 max-width: 397px;
 margin-bottom: 24px;
+@media (max-width: 800px) {
+   text-align: center;
+}
 }
 .header-box-right-btn{
+    display: block;
 font-family: var(--font-family);
 font-weight: 500;
 font-size: 18px;
@@ -95,4 +120,11 @@ padding: 18px 22px;
 width: 210px;
 height: 61px;
 background: var(--black);
+@media (max-width: 800px) {
+ margin: 0 auto;
+}
+}
+.header-img{
+    display: block;
+    width: 100%;
 }

@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
      padding: 80px 40px;
+
 }
 .events-box-left-title{
     font-family: var(--font-family);
@@ -36,6 +37,9 @@ display: block;
     display: flex;
     gap: 20px;
     justify-content: end;
+    @media (min-width: 1480px) {
+        justify-content: center;
+    }
 }
 .events-list-item{
     background: var(--white);
@@ -43,6 +47,10 @@ display: block;
 padding: 20px;
 width: 700px;
 height: 600px;
+}
+.plan-box-left-img{
+    display: block;
+    width: 100%;
 }
 .events-list-item-box{
     display: flex;

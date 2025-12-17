@@ -5,6 +5,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1200px) {
+        gap: 50px;
+    }
+     @media (max-width: 1000px) {
+        flex-direction: column;
+    }
 }
 .plan-box-left-img{
     display: block;
@@ -17,6 +23,9 @@ font-size: 48px;
 line-height: 120%;
 color: var(--black);
 max-width: 608px;
+    @media (max-width: 1000px) {
+       text-align: center;
+    }
 }
 .plan-box-right-text{
     font-family: var(--font-family);
@@ -26,6 +35,9 @@ color: var(--gray-dark);
 max-width: 608px;
 margin-top: 24px;
 margin-bottom: 24px;
+  @media (max-width: 1000px) {
+       text-align: center;
+    }
 }
 .plan-box-right-btn{
 display: flex;
@@ -41,4 +53,7 @@ border-radius: 100px;
 padding: 18px 22px;
 width: 206px;
 height: 61px;
+  @media (max-width: 1000px) {
+      margin: 0 auto;
+    }
 }

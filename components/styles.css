@@ -80,6 +80,12 @@ input {
   padding: 24px 40px;
   background: var(--cream-lite);
 }
+@media (max-width: 930px) {
+  .header-nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 
 .header-nav-list {
   display: flex;
@@ -115,6 +121,12 @@ input {
   gap: 32px;
   align-items: center;
 }
+@media (max-width: 400px) {
+  .header-nav-second-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .header-nav-second-list-item-link {
   font-family: var(--font-family);
@@ -125,6 +137,7 @@ input {
 }
 
 .header-nav-second-list-item-btn {
+  display: block;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
@@ -136,13 +149,17 @@ input {
   height: 41px;
   background-color: transparent;
 }
-
 .header-box {
   display: flex;
   margin-top: 80px;
   gap: 24px;
   align-items: center;
   margin-bottom: 40px;
+}
+@media (max-width: 800px) {
+  .header-box {
+    flex-direction: column;
+  }
 }
 
 .header-box-left-title {
@@ -153,6 +170,16 @@ input {
   color: var(--black);
   max-width: 819px;
 }
+@media (max-width: 800px) {
+  .header-box-left-title {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .header-box-left-title {
+    font-size: 58px;
+  }
+}
 
 .header-box-right-text {
   font-family: var(--font-family);
@@ -162,8 +189,14 @@ input {
   max-width: 397px;
   margin-bottom: 24px;
 }
+@media (max-width: 800px) {
+  .header-box-right-text {
+    text-align: center;
+  }
+}
 
 .header-box-right-btn {
+  display: block;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
@@ -177,6 +210,16 @@ input {
   height: 61px;
   background: var(--black);
 }
+@media (max-width: 800px) {
+  .header-box-right-btn {
+    margin: 0 auto;
+  }
+}
+
+.header-img {
+  display: block;
+  width: 100%;
+}
 
 .adventure {
   margin-top: 80px;
@@ -188,6 +231,14 @@ input {
 .adventure-box {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 950px) {
+  .adventure-box {
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .adventure-box-title {
@@ -211,6 +262,17 @@ input {
   display: flex;
   margin-top: 52px;
   gap: 24px;
+}
+@media (max-width: 1290px) {
+  .adventure-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.adventure-list-item-img {
+  display: block;
+  width: 100%;
 }
 
 .adventure-list-item-card {
@@ -244,6 +306,12 @@ input {
   align-items: center;
   margin-top: 120px;
 }
+@media (max-width: 980px) {
+  .exploring-box {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
 
 .exploring-box-left-title {
   font-family: var(--font-family);
@@ -253,6 +321,11 @@ input {
   color: var(--black);
   max-width: 608px;
 }
+@media (max-width: 980px) {
+  .exploring-box-left-title {
+    text-align: center;
+  }
+}
 
 .exploring-box-left-text {
   font-family: var(--font-family);
@@ -261,6 +334,11 @@ input {
   color: var(--gray-dark);
   max-width: 608px;
   margin-top: 24px;
+}
+@media (max-width: 980px) {
+  .exploring-box-left-text {
+    text-align: center;
+  }
 }
 
 .exploring-box-left-btn {
@@ -278,6 +356,17 @@ input {
   height: 61px;
   margin-top: 24px;
   background-color: transparent;
+}
+@media (max-width: 980px) {
+  .exploring-box-left-btn {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+.exploring-box-right-img {
+  display: block;
+  width: 100%;
 }
 
 .events {
@@ -325,6 +414,11 @@ input {
   gap: 20px;
   justify-content: end;
 }
+@media (min-width: 1480px) {
+  .events-list {
+    justify-content: center;
+  }
+}
 
 .events-list-item {
   background: var(--white);
@@ -332,6 +426,11 @@ input {
   padding: 20px;
   width: 700px;
   height: 600px;
+}
+
+.plan-box-left-img {
+  display: block;
+  width: 100%;
 }
 
 .events-list-item-box {
@@ -400,6 +499,16 @@ input {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1200px) {
+  .plan-box {
+    gap: 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .plan-box {
+    flex-direction: column;
+  }
+}
 
 .plan-box-left-img {
   display: block;
@@ -414,6 +523,11 @@ input {
   color: var(--black);
   max-width: 608px;
 }
+@media (max-width: 1000px) {
+  .plan-box-right-title {
+    text-align: center;
+  }
+}
 
 .plan-box-right-text {
   font-family: var(--font-family);
@@ -423,6 +537,11 @@ input {
   max-width: 608px;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+@media (max-width: 1000px) {
+  .plan-box-right-text {
+    text-align: center;
+  }
 }
 
 .plan-box-right-btn {
@@ -439,4 +558,9 @@ input {
   padding: 18px 22px;
   width: 206px;
   height: 61px;
+}
+@media (max-width: 1000px) {
+  .plan-box-right-btn {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
