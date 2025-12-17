@@ -1,0 +1,44 @@
+.plan{
+    margin-top: 120px;
+}
+.plan-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan-box-left-img{
+    display: block;
+    width: 100%;
+}
+.plan-box-right-title{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 48px;
+line-height: 120%;
+color: var(--black);
+max-width: 608px;
+}
+.plan-box-right-text{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+color: var(--gray-dark);
+max-width: 608px;
+margin-top: 24px;
+margin-bottom: 24px;
+}
+.plan-box-right-btn{
+display: flex;
+align-items: center;
+gap: 10px;
+background-color: transparent;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+color: var(--black);
+border: 1px solid var(--black);
+border-radius: 100px;
+padding: 18px 22px;
+width: 206px;
+height: 61px;
+}

@@ -1,0 +1,53 @@
+.adventure{
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: var(--cream-lite);
+}
+.adventure-box{
+display: flex;
+    justify-content: space-between;
+}
+.adventure-box-title{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 48px;
+line-height: 120%;
+color: var(--black);
+max-width: 608px;
+}
+.adventure-box-text{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 24px;
+color: var(--black);
+max-width: 496px;
+}
+.adventure-list{
+    display: flex;
+    margin-top: 52px;
+    gap: 24px;
+}
+
+.adventure-list-item-card{
+background: var(--sky);
+border-radius: 16px;
+padding: 20px;
+width: 292px;
+height: 360px;
+}
+.adventure-list-item-card-title{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 24px;
+color: var(--black);
+max-width: 252px;
+}
+.adventure-list-item-card-text{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+color: var(--gray-dark);
+max-width: 252px;
+margin-top: 20px;
+}
