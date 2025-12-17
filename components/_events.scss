@@ -8,7 +8,6 @@
     justify-content: space-between;
     align-items: center;
      padding: 80px 40px;
-
 }
 .events-box-left-title{
     font-family: var(--font-family);
@@ -45,10 +44,10 @@ display: block;
     background: var(--white);
     border-radius: 16px;
 padding: 20px;
-width: 700px;
+width: calc(50% - 20px);
 height: 600px;
 }
-.plan-box-left-img{
+.events-list-item-img{
     display: block;
     width: 100%;
 }

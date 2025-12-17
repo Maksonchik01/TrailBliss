@@ -38,10 +38,66 @@ max-width: 496px;
         flex-wrap: wrap;
         justify-content: center;
     }
+    & > li {
+         @media (max-width: 1290px) {
+            width: calc(50% - 24px);
+         }
+    }
+    @media (max-width: 750px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .adventure-list-item-img{
     display: block;
     width: 100%;
+}
+.adventure-list-item-back-img{
+    background-image: url(../img/Card\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 292px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.adventure-list-item-text{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 24px;
+color: var(--white);
+max-width: 252px;
+}
+.adventure-list-item-link-arrow{
+    width: 40px;
+    height: 40px;
+    background: #ED952B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adventure-list-item-back-img-play{
+    background-image: url(../img/Card\ 3.png);
+    width: 187px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.adventure-list-item-link-play{
+    width: 40px;
+    height: 40px;
+            background: #ED952B;
+    border-radius: 50%;
+       display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .adventure-list-item-card{
 background: var(--sky);
@@ -49,6 +105,13 @@ border-radius: 16px;
 padding: 20px;
 width: 292px;
 height: 360px;
+@media (max-width: 1290px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
 }
 .adventure-list-item-card-title{
     font-family: var(--font-family);
