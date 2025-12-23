@@ -1,44 +1,6 @@
 .header{
     margin-top: 40px;
 }
-.header-nav-burger{
-    display: flex;
-    position: relative;
-    z-index: 50;
-    align-items: center;
-    justify-content: flex-end;
-    width: 30px;
-    height: 18px;
-}
-.header-nav-burger-span{
-    height: 2px;
-    width: 100%;
-    transform: scale(1);
-    background-color: #161616;
-}
-.header-nav-burger::before, .header-nav-burger::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: #161616;
-    transition: all 0.3s ease-in 0s;
-}
-.header-nav-burger::before{
-top: 0;
-}
-.header-nav-burger::after{
-bottom: 0;
-}
-.header-nav-burger :active, .header-nav-burger-span {transform: scale(0);}
-.header-nav-burger :active::before{
-    top: 50%;
-    transform: rotate(-45deg) translate(0, -50%);
-}
-.header-nav-burger :active::after{
-    bottom: 50%;
-    transform: rotate(45deg) translate(0, 50%);
-}
 .header-nav{
     display: flex;
     align-items: center;
