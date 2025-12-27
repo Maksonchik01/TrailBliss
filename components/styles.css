@@ -648,6 +648,13 @@ input {
   gap: 117px;
   padding-bottom: 80px;
 }
+@media (max-width: 1160px) {
+  .reviews-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .reviews-box-left-title {
   font-family: var(--font-family);
@@ -658,6 +665,11 @@ input {
   margin-bottom: 24px;
   max-width: 397px;
 }
+@media (max-width: 1160px) {
+  .reviews-box-left-title {
+    text-align: center;
+  }
+}
 
 .reviews-box-left-text {
   font-family: var(--font-family);
@@ -666,11 +678,21 @@ input {
   color: var(--gray-dark);
   max-width: 397px;
 }
+@media (max-width: 1160px) {
+  .reviews-box-left-text {
+    text-align: center;
+  }
+}
 
 .reviews-box-right-list {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+@media (max-width: 770px) {
+  .reviews-box-right-list {
+    flex-direction: column;
+  }
 }
 
 .reviews-box-right-list-item {
@@ -723,6 +745,12 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1270px) {
+  .moments-box {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 .moments-title {
@@ -787,6 +815,14 @@ input {
 .footer-box {
   display: flex;
   gap: 64px;
+  align-items: flex-start;
+}
+@media (max-width: 1280px) {
+  .footer-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer-box-left-box {
@@ -806,6 +842,11 @@ input {
   font-size: 20px;
   color: var(--black);
 }
+@media (max-width: 1280px) {
+  .footer-box-left-box-right-title {
+    text-align: center;
+  }
+}
 
 .footer-box-left-text {
   font-family: var(--font-family);
@@ -814,6 +855,11 @@ input {
   color: var(--black);
   max-width: 252px;
   margin-top: 12px;
+}
+@media (max-width: 1280px) {
+  .footer-box-left-text {
+    text-align: center;
+  }
 }
 
 .footer-box-middle {
@@ -834,12 +880,22 @@ input {
   color: var(--black);
   margin-bottom: 12px;
 }
+@media (max-width: 1280px) {
+  .footer-box-middle-list-item-title {
+    text-align: center;
+  }
+}
 
 .footer-box-middle-list-item-text {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   color: var(--black);
+}
+@media (max-width: 1280px) {
+  .footer-box-middle-list-item-text {
+    text-align: center;
+  }
 }
 
 .footer-box-middle-list-item-link {
@@ -848,4 +904,36 @@ input {
   font-size: 14px;
   color: var(--black);
   text-decoration: none;
+}
+@media (max-width: 1280px) {
+  .footer-box-middle-list-item-link {
+    text-align: center;
+  }
+}
+
+.footer-box-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 54px;
+}
+
+.footer-box-right-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--black);
+  max-width: 231px;
+}
+@media (max-width: 1280px) {
+  .footer-box-right-text {
+    text-align: center;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 72px;
 }/*# sourceMappingURL=styles.css.map */

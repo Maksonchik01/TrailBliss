@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1270px) {
+        flex-direction: column;
+        gap: 50px;
+    }
 }
 .moments-title{
     font-family: var(--font-family);
